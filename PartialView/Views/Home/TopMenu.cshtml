@@ -1,0 +1,10 @@
+﻿@model IEnumerable<PartialView.Models.Menu>
+
+
+
+@foreach (var item in Model)
+{
+    <li>@Html.ActionLink(item.MenuDescription, "Index", "Home")</li>
+}
+
+
